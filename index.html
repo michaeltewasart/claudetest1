@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passport Plates — Food From Around the World</title>
+  <meta name="description" content="A blog about street food, home cooking and food traditions from every corner of the world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Passport<span>Plates</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#stories">Stories</a>
+        <a href="#regions">Regions</a>
+        <a href="#recipe">Recipe of the Week</a>
+        <a href="#newsletter" class="btn btn-small">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Featured story -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Featured · Mexico</p>
+        <h1>Breakfast in Oaxaca: seven moles and a market at dawn</h1>
+        <p class="lede">We followed a family of cooks through the Mercado 20 de Noviembre to learn why a single mole can take three days and more than thirty ingredients.</p>
+        <div class="meta">
+          <span>By Lena Ortiz</span><span>12 min read</span>
+        </div>
+        <a href="articles/oaxaca-mole.html" class="btn">Read the story</a>
+      </div>
+      <figure class="hero-image placeholder ph-mole" role="img" aria-label="Placeholder image: bowls of dark mole sauce">
+        <span>Oaxacan mole</span>
+      </figure>
+    </section>
+
+    <!-- Region filter -->
+    <section id="regions" class="regions container">
+      <h2 class="section-title">Explore by region</h2>
+      <div class="filters" role="group" aria-label="Filter stories by region">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="asia">Asia</button>
+        <button class="chip" data-filter="europe">Europe</button>
+        <button class="chip" data-filter="americas">Americas</button>
+        <button class="chip" data-filter="africa">Africa</button>
+        <button class="chip" data-filter="middle-east">Middle East</button>
+        <button class="chip" data-filter="oceania">Oceania</button>
+      </div>
+    </section>
+
+    <!-- Story grid -->
+    <section id="stories" class="container">
+      <div class="grid">
+        <article class="card" data-region="asia">
+          <div class="card-image placeholder ph-ramen" role="img" aria-label="Placeholder image: a bowl of ramen"><span>Tonkotsu ramen</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Japan</p>
+            <h3><a href="articles/fukuoka-ramen.html">The 18-hour broth: inside a Fukuoka ramen counter</a></h3>
+            <p>Pork bones, a rolling boil and a chef who hasn't taken a day off in nine years.</p>
+            <div class="meta"><span>8 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="europe">
+          <div class="card-image placeholder ph-pasta" role="img" aria-label="Placeholder image: fresh pasta"><span>Hand-rolled pici</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Italy</p>
+            <h3><a href="articles/tuscan-pici.html">Pici, garlic and patience in the Tuscan hills</a></h3>
+            <p>A thick, hand-rolled pasta that needs nothing more than flour, water and a good afternoon.</p>
+            <div class="meta"><span>6 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="africa">
+          <div class="card-image placeholder ph-jollof" role="img" aria-label="Placeholder image: a pot of jollof rice"><span>Jollof rice</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Ghana &amp; Nigeria</p>
+            <h3><a href="articles/jollof-rice.html">The friendliest rivalry in West Africa is about rice</a></h3>
+            <p>Smoky, tomato-rich and fiercely debated. We tasted both sides so you don't have to pick.</p>
+            <div class="meta"><span>10 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="middle-east">
+          <div class="card-image placeholder ph-mezze" role="img" aria-label="Placeholder image: a mezze spread"><span>Mezze spread</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Lebanon</p>
+            <h3><a href="articles/lebanese-mezze.html">How to build a mezze table that lasts all evening</a></h3>
+            <p>Hummus, tabbouleh, labneh and the art of never letting the table look empty.</p>
+            <div class="meta"><span>7 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="americas">
+          <div class="card-image placeholder ph-ceviche" role="img" aria-label="Placeholder image: ceviche"><span>Ceviche</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Peru</p>
+            <h3><a href="articles/lima-ceviche.html">Lima's lunchtime ritual: ceviche before 3 p.m.</a></h3>
+            <p>Why locals insist raw fish is a midday food, and what "tiger's milk" really is.</p>
+            <div class="meta"><span>5 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="asia">
+          <div class="card-image placeholder ph-curry" role="img" aria-label="Placeholder image: a bowl of curry"><span>Massaman curry</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Thailand</p>
+            <h3><a href="articles/massaman-curry.html">Massaman: the curry shaped by centuries of trade</a></h3>
+            <p>Cardamom, cinnamon and peanuts tell the story of merchants who crossed oceans.</p>
+            <div class="meta"><span>9 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="oceania">
+          <div class="card-image placeholder ph-hangi" role="img" aria-label="Placeholder image: an earth oven feast"><span>Hāngī feast</span></div>
+          <div class="card-body">
+            <p class="eyebrow">New Zealand</p>
+            <h3><a href="articles/hangi.html">Cooking underground: a hāngī from start to finish</a></h3>
+            <p>Hot stones, a pit in the earth and a meal that brings a whole community together.</p>
+            <div class="meta"><span>11 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="europe">
+          <div class="card-image placeholder ph-pastry" role="img" aria-label="Placeholder image: custard tarts"><span>Pastéis de nata</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Portugal</p>
+            <h3><a href="articles/lisbon-custard-tarts.html">Chasing the perfect custard tart through Lisbon</a></h3>
+            <p>Blistered tops, shattering pastry and a dusting of cinnamon at every bakery we tried.</p>
+            <div class="meta"><span>6 min read</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-region="africa">
+          <div class="card-image placeholder ph-tagine" role="img" aria-label="Placeholder image: a tagine"><span>Lamb tagine</span></div>
+          <div class="card-body">
+            <p class="eyebrow">Morocco</p>
+            <h3><a href="articles/moroccan-tagine.html">Slow food, literally: the Moroccan tagine</a></h3>
+            <p>A conical clay pot, preserved lemons and the gentlest heat you can manage.</p>
+            <div class="meta"><span>8 min read</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No stories from this region yet — check back soon.</p>
+    </section>
+
+    <!-- Recipe of the week -->
+    <section id="recipe" class="recipe">
+      <div class="container recipe-inner">
+        <figure class="recipe-image placeholder ph-shakshuka" role="img" aria-label="Placeholder image: shakshuka in a pan"><span>Shakshuka</span></figure>
+        <div class="recipe-text">
+          <p class="eyebrow">Recipe of the week · North Africa</p>
+          <h2>One-pan shakshuka</h2>
+          <p>Eggs poached in a spiced tomato and pepper sauce. Serves 2 in about 30 minutes.</p>
+          <div class="recipe-cols">
+            <div>
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 tbsp olive oil</li>
+                <li>1 onion, sliced</li>
+                <li>1 red pepper, sliced</li>
+                <li>2 garlic cloves, chopped</li>
+                <li>1 tsp cumin, 1 tsp paprika</li>
+                <li>1 can (400 g) crushed tomatoes</li>
+                <li>4 eggs</li>
+                <li>Parsley, feta and bread to serve</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Method</h3>
+              <ol>
+                <li>Soften the onion and pepper in oil over medium heat, about 8 minutes.</li>
+                <li>Add garlic and spices; cook for 1 minute.</li>
+                <li>Pour in tomatoes, season, and simmer until thick, about 10 minutes.</li>
+                <li>Make four wells, crack in the eggs, cover, and cook until the whites set.</li>
+                <li>Top with parsley and feta. Serve with warm bread.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter container">
+      <h2>Get a new dish in your inbox every Sunday</h2>
+      <p>One story, one recipe, one place. No spam.</p>
+      <form class="newsletter-form">
+        <label for="email" class="visually-hidden">Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p class="form-message" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">Passport<span>Plates</span></a>
+      <p>Stories and recipes from kitchens around the world.</p>
+      <p class="small">© <span id="year"></span> Passport Plates. Placeholder images and sample content.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
